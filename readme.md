@@ -129,18 +129,11 @@ You can register a new user or use demo credentials:
 - **Username:** admin
 - **Password:** password123
 
----
-
-## 📸 Screenshots
-- 🏠 Homepage
-- 👤 User Dashboard
-- 🛒 Shopping Cart
-
-*(Replace with your actual screenshots in the ./screenshots folder)*
 
 ---
 
 ## 📜 License
 This project is licensed under the MIT License.
+
 
 You are free to use, modify, and distribute this software for educational and commercial purposes.

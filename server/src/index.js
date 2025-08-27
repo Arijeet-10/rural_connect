@@ -209,6 +209,10 @@ app.put('/api/user/:id', verifyToken, async (req, res) => {
     }
 });
 
+app.get('/', (req, res) => {
+  res.send('Server is live and running! ');
+})
+
 
 // --- Server Start ---
 app.listen(PORT, () => {

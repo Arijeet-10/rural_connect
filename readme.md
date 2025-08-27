@@ -1,133 +1,138 @@
-RuralConnect - Community Hub
-RuralConnect is a full-stack web application prototype designed to help rural communities easily find and access essential products and services. This platform aims to bridge the gap between local needs and available resources through a simple, user-friendly interface.
+# 🌾 RuralConnect - Community Hub  
 
-✨ Features Covered
-Homepage: An attractive and responsive landing page featuring:
+**RuralConnect** is a full-stack web application prototype designed to help rural communities easily find and access essential products and services.  
+This platform aims to bridge the gap between local needs and available resources through a **simple, user-friendly interface**.  
 
-Services Section
+---
 
-Available Products Section
+## ✨ Features Covered  
 
-News & Updates
+### 🏠 Homepage  
+An attractive and responsive landing page featuring:  
+- **Services Section**  
+- **Available Products Section**  
+- **News & Updates**  
+- **Contact Form**  
 
-Contact Form
+### 🔐 User Authentication  
+- Secure user **registration and login** flow.  
 
-User Authentication: Secure user registration and login flow.
+### 👤 User Dashboard  
+A personalized dashboard for logged-in users to:  
+- View their profile information.  
+- See a list of their past bookings.  
+- Edit their basic profile details (phone number).  
 
-User Dashboard: A personalized dashboard for logged-in users to:
+### 🛍️ Product Management  
+- Dynamic product listings fetched from the database.  
+- Search functionality to filter products.  
 
-View their profile information.
+### 🛒 Shopping Cart  
+- Add items to a **persistent shopping cart**.  
+- Adjust item quantities or remove them.  
 
-See a list of their past bookings.
+### 📅 Booking System  
+- Logged-in users can **check out their cart**, which creates a booking record in the database linked to their profile.  
 
-Edit their basic profile details (phone number).
+---
 
-Product Management:
+## 🛠️ Tech Stack  
 
-Dynamic product listings fetched from the database.
+### ⚡ Frontend  
+- **React.js** – JavaScript library for building UIs  
+- **Tailwind CSS** – Utility-first CSS framework  
+- **Lucide-React** – Beautiful and consistent icons  
+- **Axios** – Promise-based HTTP client  
+- **React Router** – Client-side routing  
 
-Search functionality to filter products.
+### ⚙️ Backend  
+- **Node.js** – JavaScript runtime environment  
+- **Express.js** – Web application framework  
+- **bcrypt.js** – Secure password hashing  
+- **JWT (JSON Web Tokens)** – Authentication tokens  
 
-Shopping Cart:
+### 🗄️ Database  
+- **PostgreSQL** – Open-source relational database  
+- **Neon** – Serverless PostgreSQL hosting  
 
-Add items to a persistent shopping cart.
+---
 
-Adjust item quantities or remove them from the cart.
+## 🚀 How to Run the App Locally  
 
-Booking System: Logged-in users can "check out" their cart, which creates a booking record in the database linked to their profile.
+### ✅ Prerequisites  
+- **Node.js** (v18 or later recommended)  
+- **Neon account** for PostgreSQL hosting  
 
-🛠️ Tech Stack
-This project is built with a modern, full-stack JavaScript architecture.
-
-Frontend:
-
-React.js: A JavaScript library for building user interfaces.
-
-Tailwind CSS: A utility-first CSS framework for rapid UI development.
-
-Lucide-React: A library of beautiful and consistent icons.
-
-Axios: A promise-based HTTP client for making API requests.
-
-React Router: For handling client-side routing and navigation.
-
-Backend:
-
-Node.js: A JavaScript runtime environment.
-
-Express.js: A minimal and flexible Node.js web application framework.
-
-bcrypt.js: For hashing user passwords securely.
-
-JSON Web Tokens (JWT): For creating secure authentication tokens.
-
-Database:
-
-PostgreSQL: A powerful, open-source object-relational database system.
-
-Neon: A serverless PostgreSQL platform for hosting the database.
-
-🚀 How to Run the App Locally
-To get the application running on your local machine, follow these steps.
-
-Prerequisites
-Node.js (v18 or later recommended)
-
-A Neon account to host the PostgreSQL database.
-
-1. Clone & Setup
-First, clone the repository and set up the project structure as described in the setup guide.
-
-2. Backend Setup (server)
+### 🔧 1. Clone & Setup  
+```bash
+git clone https://github.com/Arijeet-10/rural_connect.git
+cd rural_connect
+🔧 2. Backend Setup (server)
 Navigate to the server directory:
 
+bash
+Copy code
 cd rural_connect/server
+Create a .env file and add:
 
-Create a .env file and add your Neon database connection string and a JWT secret:
-
+env
+Copy code
 # server/.env
 DATABASE_URL="your_neon_postgresql_connection_string"
 JWT_SECRET="choose_a_strong_secret_key"
+Install dependencies:
 
-Install the dependencies:
-
+bash
+Copy code
 npm install
-
-Run the database schema SQL from the setup guide in your Neon SQL editor to create the tables.
+Run the database schema SQL (from setup guide) in Neon SQL editor to create tables.
 
 Start the backend server:
 
+bash
+Copy code
 node index.js
+Server will run on 👉 http://localhost:5000
 
-The server will be running on http://localhost:5000.
+🔧 3. Frontend Setup (client)
+Open a new terminal and navigate:
 
-3. Frontend Setup (client)
-Open a new terminal window and navigate to the client directory:
-
+bash
+Copy code
 cd rural_connect/client
+Create a .env file for frontend:
 
-Create a new environment file for the frontend. In your terminal, run:
-
+bash
+Copy code
 touch .env
+Add backend API URL:
 
-Add the backend API URL to this new .env file. This prevents hardcoding the URL in your components.
-
+env
+Copy code
 # client/.env
 VITE_API_URL=http://localhost:5000
+Install dependencies:
 
-Install the dependencies:
-
+bash
+Copy code
 npm install
+Start React development server:
 
-Start the React development server:
-
+bash
+Copy code
 npm run dev
-
-The application will open in your browser, usually at http://localhost:5173.
+Frontend will open 👉 http://localhost:5173
 
 🔑 Demo Login
-You can register a new user or use the following credentials for a quick demonstration after registering:
+You can register a new user or use these credentials for demo:
 
-Username: admin 
+Username: admin
 
 Password: password123
+
+yaml
+Copy code
+
+---
+
+Would you like me to also create a **README.md file** version (with badges, table of contents, and screen
